@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.transOne {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 50px;
+  transform: rotate(20deg);
+}
+.transTwo {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin: 50px;
+  transform: skew(-20deg);
+}
+.transThree {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  margin: 50px;
+  transition: width 2s, height 1s;
+}
+.transThree:hover {
+  width: 700px;
+  height: 250px;
+}
+/* ANIMATION SECTION */
+.sectionA {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.animatediv {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: blue;
+  animation-name: animBox;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes animBox {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: blue;
+  }
+  25% {
+    top: 0;
+    right: 0;
+    background-color: red;
+  }
+  50% {
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+  }
+  75% {
+    bottom: 0;
+    left: 0;
+    background-color: black;
+  }
+}
